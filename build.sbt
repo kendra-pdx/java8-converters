@@ -16,4 +16,4 @@ crossScalaVersions := Seq(
   "2.10", "2.11"
 )
 
-licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+licenses := Seq(("MIT", url("http://opensource.org/licenses/MIT")))
