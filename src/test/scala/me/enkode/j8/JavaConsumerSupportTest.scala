@@ -11,7 +11,7 @@ class JavaConsumerSupportTest extends FlatSpec with Matchers {
     }
   }
 
-  "JavaConsumerSupport" should "be able to convert to a scala function" in {
+  "JavaConsumerSupport" should "be able to convert a java consumer to a scala function" in {
     var consumed = false
     val consumption = fixture((value) ⇒ consumed = true).asScala
     consumption("foo")
