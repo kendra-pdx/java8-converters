@@ -10,7 +10,7 @@ name := "java8-converters"
 
 organization := "me.enkode"
 
-version := "1.0.0"
+version := "1.1.0"
 
 crossScalaVersions := Seq(
   "2.10", "2.11"
