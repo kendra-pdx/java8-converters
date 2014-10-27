@@ -17,7 +17,17 @@ Supported conversions:
 
 Follows the same class enrichment pattern as scala-library's [JavaConverters](http://www.scala-lang.org/api/current/#scala.collection.JavaConverters$) by adding `.asJava` and `.asScala` methods to appropriate classes.
 
-Enable with: 
+## How to Use
+
+In your build:
+
+```scala
+resolvers += "kender" at "http://dl.bintray.com/kender/maven"
+
+libraryDependencies += "me.enkode" %% "java8-converters" % "1.1.0"
+```
+
+In your program:
 
 ```scala
 import me.enkode.j8.Java8Converters._
