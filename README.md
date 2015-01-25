@@ -9,15 +9,25 @@ Supported conversions:
 - scala `(T) ⇒ R` to/from java `Function[T, R]`
 - scala `(T) ⇒ Unit` to/from java `Consumer[T]`
 - scala `(T) ⇒ Boolean` to/from java `Predicate[T]`
-- scala `(T, U) ⇒ R` to/from java `Function[T, U, R]`
-- scala `(T, U) ⇒ Unit` to/from java `Consumer[T, U]`
-- scala `(T, U) ⇒ Boolean` to/from java `Predicate[T, U]`
+- scala `(T, U) ⇒ R` to/from java `BiFunction[T, U, R]`
+- scala `(T, U) ⇒ Unit` to/from java `BiConsumer[T, U]`
+- scala `(T, U) ⇒ Boolean` to/from java `BiPredicate[T, U]`
 - scala `Stream[T]` to/from java `Stream[T]`
 - scala `Option[T]` to/from java `Optional[T]`
 
 Follows the same class enrichment pattern as scala-library's [JavaConverters](http://www.scala-lang.org/api/current/#scala.collection.JavaConverters$) by adding `.asJava` and `.asScala` methods to appropriate classes.
 
-Enable with: 
+## How to Use
+
+In your build:
+
+```scala
+resolvers += "kender" at "http://dl.bintray.com/kender/maven"
+
+libraryDependencies += "me.enkode" %% "java8-converters" % "1.1.0"
+```
+
+In your program:
 
 ```scala
 import me.enkode.j8.Java8Converters._
