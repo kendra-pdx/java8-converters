@@ -1,3 +1,10 @@
+Deprecated
+==========
+
+This project is no longer needed nor maintained!
+
+Use [scala-java8-compat](https://github.com/scala/scala-java8-compat) from the main Scala repository instead.
+
 Java 8 Converters
 =================
 
